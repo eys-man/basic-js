@@ -16,9 +16,6 @@ const { NotImplementedError } = require('../extensions/index.js');
   // remove line with error and write your code here
 // }
 
-
-  //let year = ['winter', 'winter', 'spring', 'spring', 'spring', 'summer', 'summer', 'summer', 'autumn', 'autumn', 'autumn', 'winter'];
-
 function getSeason( date )
 {
   if( !date )
