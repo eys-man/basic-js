@@ -17,7 +17,12 @@ const { NotImplementedError } = require('../extensions/index.js');
 // }
 
 function getSeason( date ) {
+  let season=''; // время года
   
+  // проверить date на правильность
+   
+  
+  let now = new Date();
 }
 
 
