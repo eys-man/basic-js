@@ -28,7 +28,7 @@ const { NotImplementedError } = require('../extensions/index.js');
     if( typeof position === 'number' && (position ^ 0) === position ) // проверка на то, что число, и на целое число
     {
       //alert('индекс удаляемого элемента массива - это число, и оно - целое');
-      if( position < 0 || position >= this.getLength() ) 
+      if( position < 1 || position > this.getLength() ) 
       {
         //alert('индекс ссылается на несуществующие элементы')
         this.chain.length=0; // удалить массив
@@ -37,7 +37,7 @@ const { NotImplementedError } = require('../extensions/index.js');
       else
       {
         //alert('удаляем элемент с позиции '+ position +':  '+ this.chain[position]+ ' длина массива сейчас='+this.getLength() );
-        this.chain.splice( position, 1); // удалить, начиная с позиции один элемент
+        this.chain.splice( position-1, 1); // удалить, начиная с позиции один элемент
         //alert('новый массив: '+this.chain + ' его длина='+this.getLength() );
         return this;
       }
